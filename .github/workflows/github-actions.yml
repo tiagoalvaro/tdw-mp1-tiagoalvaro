@@ -65,10 +65,10 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+      - run: npm run build
       - uses: actions/upload-artifact@v3
         with:
           path: out
-      - run: npm run build
 
   deploy:
     needs: [install, test, build]
