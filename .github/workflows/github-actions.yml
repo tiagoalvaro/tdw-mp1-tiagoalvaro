@@ -67,6 +67,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           path: out
+          retention-days: 1
 
   deploy:
     needs: [install, test, build]
