@@ -78,4 +78,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
+      - uses: actions/download-artifact@v3
+        with:
+          path: out
       - run: npx netlify-cli deploy --site "$NETLIFY_API_ID" --auth "$NETLIFY_AUTH_TOKEN" --prod
