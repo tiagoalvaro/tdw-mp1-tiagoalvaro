@@ -30,7 +30,6 @@ jobs:
         with:
           node-version: "16"
       - name: Cache node modules
-        id: cache-nodemodules
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
@@ -54,7 +53,6 @@ jobs:
         with:
           node-version: "16"
       - name: Cache node modules
-        id: cache-nodemodules
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
