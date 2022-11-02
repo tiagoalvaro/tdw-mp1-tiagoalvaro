@@ -69,7 +69,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: build-files
-          path: out/
+          path: out
           retention-days: 1
 
   deploy:
@@ -83,6 +83,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: build-files
-          path: out/
+          path: out
           retention-days: 1
       - run: npx netlify-cli deploy --site "$NETLIFY_SITE_ID" --auth "$NETLIFY_AUTH_TOKEN" --prod
