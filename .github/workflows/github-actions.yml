@@ -1,4 +1,4 @@
-name: My workflow
+name: Pipeline
 run-name: ${{ github.actor }} is running some stuff
 on:
   push:
