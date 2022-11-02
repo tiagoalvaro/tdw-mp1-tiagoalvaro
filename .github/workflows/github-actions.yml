@@ -7,10 +7,6 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
-#env:
-  #NETLIFY_SITE_ID: 5e5de185-35b3-4ffc-b1ea-f3a69c53daaa
-  #NETLIFY_AUTH_TOKEN: bxFqZk49uAFVCx1KymPyOqzRtSW-e8sns_2aLGqetK0
-
 env:
   NETLIFY_SITE_ID: ${{secrets.NETLIFY_SITE_ID}}
   NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_AUTH_TOKEN}}
